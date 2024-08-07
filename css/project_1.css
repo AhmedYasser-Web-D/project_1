@@ -1,0 +1,470 @@
+/* Start Variables */
+:root {
+    --main-color: #F1F1F1;
+    --transparent-color: rgba(424242);
+    --section-padding: 100px;
+}
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--main-color);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+  /* End Global Rules */
+.page{
+    background-color: rgba(17, 17, 17, 0.932);
+    width: 100vw;
+    height: 100vh;
+}
+.page .nav .container h2{
+    
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+.page .nav .container i{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    
+    /* margin-top: -5px; */
+
+
+}
+.page .nav .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    height: 250px;
+    position: relative;
+}
+
+
+.page .nav .container ul{display: flex;
+    padding: 5px;
+    gap: 30px; }
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ */
+.page .frist .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+}
+
+
+
+
+.page .frist .container .left h2{
+    font-size: 4rem;
+    color: white;
+    animation-name: fadeleft;
+    animation-duration: 3s;
+
+} 
+.page .frist .container .left p:first-child{
+    letter-spacing: 10px;
+    animation-name: fadeup;
+    animation-duration: 3s;
+}
+.page .frist .container .left .par{font-size:17px;
+    animation-name: fadeleft;
+    animation-duration: 3s;}
+
+.page .frist .container .left .box{
+    background-color: rgb(231, 123, 22);
+    height: 50px;
+    text-align:     center;
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    transition: .2s;
+    margin-top: 50px;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    animation-name: fadedown;
+    animation-duration: 3s;
+}
+.page .frist .container .left .box h5{
+    transition: .2s;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.page .frist .container .left .box h5:hover{
+    padding: 20px;
+    font-size: x-large;
+
+}
+.page .frist .container .left .box:hover{
+    width: 70%;
+    height: 5rem;
+}
+
+.right img{
+    animation-name: faderight;
+    animation-duration: 3s;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.page_two{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.page_two .second{
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+}
+
+.page_two .second .container{
+    display: flex;
+    padding-top:150px;
+    gap: 20px;
+
+}
+.page_two .second .container .card{
+    background-color: var(--main-color);
+    width: 100%;
+    position: relative;
+    height: 200px;
+    text-align: center;
+    
+}
+.page_two .second .container .card h4{
+    color: rgb(209, 91, 13);
+    position: absolute;
+    top: 65%;
+    transition:.5s ;
+    left: 60%;
+    font-size: x-large;
+    -webkit-transition:.5s ;
+    -moz-transition:.5s ;
+    -ms-transition:.5s ;
+    -o-transition:.5s ;
+}
+.page_two .second .container .card:hover h4{
+    left: 70%;
+    top: 65%;
+
+}
+
+.page_two .second{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.page_two .second .container .card p{
+    color: black;
+}
+.page_two .second .container .card h2{color: black;}
+.page_two .second .container .card img{
+    position: absolute;
+    top: -80px;
+    left: 150px;
+}
+
+
+.page_two .second .container .card .text{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    top: 60%;
+    left: 50%;
+    padding: 30px;
+    color: black;
+    
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.page_two .second .container .box:first-child{
+    background-color: #D87C49;
+    background-size: contain;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+
+}
+.page_two .second .container .box:first-child .text{padding-top: 50px;
+}
+
+.page_two .second .container .box:first-child img{
+    -webkit-transform: translate(4%,14%);
+
+}
+
+
+.page_two .second .container .box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page_two .second .container .box h2{
+    font-size: 4rem;
+    color: var(--main-color);
+}
+.page_two .second .container .box p{
+    font-size: large;
+    color: var(--main-color);
+    
+}
+.page_two .second .container:nth-child(2){
+    display: flex;
+    flex-direction: column;
+
+}
+.page_two .second .container:nth-child(2) button{
+    background-color:black;
+    color: var(--main-color);
+    padding: 15px 20px;
+    transition:.2s ;
+    -webkit-transition:.2s ;
+    -moz-transition:.2s ;
+    -ms-transition:.2s ;
+    -o-transition:.2s ;
+}
+.page_two .second .container:nth-child(2) button:hover{padding: 20px;
+    font-size: x-large;}
+
+
+    .page_two .second .container:nth-child(2) .box:nth-child(2){
+    width: 100%;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    position: relative;
+
+}
+.page_two .second .container:nth-child(2) .box:nth-child(2) .text{
+    padding-top: 70px;
+}
+.page_two .second .container:nth-child(2) .box:nth-child(2) button{
+    background-color: #EDEDED;
+    color: black;
+    font-weight: 700;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.page_two .second .container:nth-child(2) .box:nth-child(2) button:hover{padding: 20px;
+font-size: x-large;}
+
+.page_two .second .container:nth-child(2) .box:nth-child(2) h2{
+    color: black;
+    font-size: 2rem;
+}
+
+
+.page_two .second .container:nth-child(2) .box:nth-child(3){
+    
+    display: flex;
+    gap: 40px;
+    
+    /* overflow: hidden; */
+}
+.page_two .second .container:nth-child(2) .box:nth-child(3) .card:first-child{position: relative;
+
+}
+.page_two .second .container:nth-child(2) .box:nth-child(3) .card:first-child img{
+    width: 100%;
+    bottom: -50px;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.page_two .second .container:nth-child(2) .box:nth-child(3) .card:nth-child(2) h2{color: black;
+font-size: 2rem;
+padding-top: 3rem;
+
+}
+
+
+
+.page_two .second .container:nth-child(2) .box:nth-child(4){
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    background-color: #FAFAFA;
+    margin-bottom: 40px;
+
+}
+
+.page_two .second .container:nth-child(2) .box:nth-child(4) h2{
+    font-size: 2rem;
+    color: var(--transparent-color);
+    color: #171717;
+}
+
+.page_two .second .container:nth-child(2) .box:nth-child(4) p{color:#9F9F9F ;
+font-size: 15px;
+
+}
+/* 9F9F9F */
+
+
+.page_two .second .container:nth-child(2) .box:nth-child(4) strong{
+    color: #D37A4C;
+}
+
+.page_two .second .container:nth-child(2) .box:nth-child(4) .text{
+    padding-top: 150px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.thirds{
+    background-color: #171717;
+    width: 100vw;
+    height: 50vh;
+
+}
+
+.thirds .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: px;
+    justify-content: space-between;
+}
+.thirds .container .text_1{
+    color: #171717;
+    
+}
+.thirds .container .text_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.thirds .container .text_2 ul{display: flex;
+gap: 50px;
+}
+
+
+.thirds .container i{
+    color: #FAFAFA;
+    font-size: 5rem;
+}
+
+
+@keyframes fadedown {
+    0%{
+        transform: translatey(100px);
+        -webkit-transform: translatey(100px);
+        -moz-transform: translatey(100px);
+        -ms-transform: translatey(100px);
+        -o-transform: translatey(100px);
+}
+    100%{ transform: translatey(0px); 
+}
+    
+}
+
+
+
+@keyframes fadeleft {
+    0%{
+        transform: translatex(-100px);
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -ms-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+}
+    100%{ transform: translate(0px);
+}
+    
+}
+@keyframes faderight {
+    0%{
+        transform: translatex(100px);
+        -webkit-transform: translatex(100px);
+        -moz-transform: translatex(100px);
+        -ms-transform: translatex(100px);
+        -o-transform: translatex(100px);
+}
+    100%{ transform: translatex(0px);
+}
+    
+}
+
+@keyframes fadeup {
+    0%{
+        transform: translatey(-100px);
+        -webkit-transform: translatey(-100px);
+        -moz-transform: translatey(-100px);
+        -ms-transform: translatey(-100px);
+        -o-transform: translatey(-100px);
+}
+    100%{ transform: translatey(0px); 
+}
+    
+}
